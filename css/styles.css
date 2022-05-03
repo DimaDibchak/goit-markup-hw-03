@@ -1,3 +1,11 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 :root {
     --main-color: #212121;
     --additional-color:#757575;
@@ -8,12 +16,24 @@
     --address-color:rgba(255, 255, 255, 0.6);
 }
 
+ul {
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
 body {
     color: var(--additional-color);
     background-color: var(--white-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
     font-size: 14px;
+}
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 2px solid tomato;
 }
 .link {
     text-decoration: none;
@@ -72,6 +92,9 @@ body {
 /* Hero */
 .hero {
     background-color: var(--background-color);
+    width: 1600px;
+    height: 600px;
+    margin: 0 auto;
 }
 .hero-title {
     color: var(--white-color);
@@ -82,7 +105,7 @@ body {
     text-align: center;
     text-transform: uppercase;
 }
-.button.hero {
+.button.main {
     color: var(--white-color);
     background-color: var(--accent-color);
     font-weight: 700;
