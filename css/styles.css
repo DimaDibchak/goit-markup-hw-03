@@ -22,6 +22,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 img {
     display:block;
+    max-width: 100%;
+    height:auto;
 }
 body {
     color: var(--additional-color);
@@ -100,8 +102,14 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    
 
     margin-right: 93px;
+
+}
+.header .logo {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo,
 .nav.link {
@@ -137,14 +145,16 @@ body {
 /* Hero */
 .hero {
     background-color: var(--background-color);
-    width: 1600px;
-    height: 600px;
     text-align: center;
     
-    padding: 200px 452px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 
+}
+.hero .container {
+    width: 696px;
 }
 .hero-title {
     color: var(--white-color);
@@ -226,13 +236,16 @@ body {
 .team-member:not(:last-child) {
     margin-right: 30px;
 }
+.team-member .description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-name {
     color: var(--main-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-top: 30px;
     margin-bottom: 10px;
 
 }
@@ -242,8 +255,9 @@ body {
     line-height: 1.19;
     text-align: center;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
+
 
 /* Footer */
 .footer {
@@ -254,10 +268,9 @@ body {
 .logo.second {
     display: inline-block;
     margin-bottom: 20px;
-}
-.logo-second-word {
     color: var(--white-color);
 }
+
 
 .adress-location {
     color: var(--white-color);
@@ -288,7 +301,7 @@ body {
 /* buttons */
 .filters {
     display: flex;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
     justify-content: center;
 }
 .filter {
@@ -355,7 +368,7 @@ body {
     margin-top: 0;
     margin-bottom: 0;
 }
-.description {
+.example .description {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
